@@ -1,4 +1,4 @@
-package org.example.springexercises.library.dto;
+package org.example.springexercises.library.dtos;
 
 import jakarta.validation.constraints.NotBlank;
 

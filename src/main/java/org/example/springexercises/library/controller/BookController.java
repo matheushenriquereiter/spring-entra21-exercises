@@ -2,7 +2,7 @@ package org.example.springexercises.library.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.example.springexercises.library.dto.BookRequestDTO;
+import org.example.springexercises.library.dtos.BookRequestDTO;
 import org.example.springexercises.library.model.BookEntity;
 import org.example.springexercises.library.repository.BookRepository;
 import org.springframework.http.HttpStatus;
