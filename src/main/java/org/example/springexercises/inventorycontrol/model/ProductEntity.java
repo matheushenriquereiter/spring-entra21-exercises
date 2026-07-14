@@ -10,7 +10,7 @@ import org.example.springexercises.inventorycontrol.enums.ProductStatus;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "tables")
+@Table(name = "products")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -31,6 +31,13 @@ public class ProductEntity {
 
     @Enumerated(EnumType.STRING)
     private ProductStatus status;
+
+    public ProductEntity(String name, BigDecimal price, Integer quantityInInventory, ProductStatus status) {
+        this.name = name;
+        this.price = price;
+        this.quantityInInventory = quantityInInventory;
+        this.status = status;
+    }
 
     @PrePersist
     public void prePersist() {

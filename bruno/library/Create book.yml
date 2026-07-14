@@ -1,0 +1,25 @@
+info:
+  name: Create book
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/books"
+  body:
+    type: json
+    data: |-
+      {
+        "id": null,
+        "title": "Test1",
+        "author": "Test2",
+        "publicationDate": 2023,
+        "available": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
